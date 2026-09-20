@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-inter: var(--font-inter);
+  --font-open-sans: var(--font-open-sans);
+  --font-helvetica: var(--font-helvetica-neue-ultra-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-inter);
+  }
+
+  body {
+    font-family: var(--font-inter);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-helvetica-neue-ultra-light);
+    font-weight: 200;
+  }
+
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    font-family: var(--font-inter);
+  }
+}
