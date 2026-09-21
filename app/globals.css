@@ -50,39 +50,6 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@layer base {
-  html {
-    font-family: var(--font-inter);
-    @apply font-sans;
-  }
-
-  body {
-    font-family: var(--font-inter);
-    @apply bg-background text-foreground;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-helvetica-neue-ultra-light);
-    font-weight: 200;
-  }
-
-  button,
-  input,
-  textarea,
-  select,
-  a {
-    font-family: var(--font-inter);
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-}
-
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -150,4 +117,37 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-inter);
+    @apply font-sans;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-helvetica-neue-ultra-light);
+    font-weight: 200;
+  }
+
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    font-family: var(--font-inter);
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
 }
