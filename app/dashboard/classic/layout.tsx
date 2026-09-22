@@ -1,13 +1,13 @@
-import { ClassicDashboardLayout } from "@/components/dashboard/classic/ClassicDashboardLayout";
+import { DashboardShell } from "@/components/dashboard/classic/layout/dashboard-shell";
 
-export default function layout({
+export default function Layout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     return (
-        <ClassicDashboardLayout>
+        <DashboardShell>
             {children}
-        </ClassicDashboardLayout>
+        </DashboardShell>
     );
 }
